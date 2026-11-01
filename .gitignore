@@ -1,3 +1,6 @@
+# build output - published as GitHub release assets instead
+/dist/
+
 # runtime artefacts
 GekkouInputFix.log
 *.log

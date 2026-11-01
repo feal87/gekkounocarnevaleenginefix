@@ -16,7 +16,8 @@ modification, no patching, no synthetic clicks, no network access.
 
 ## Quick start
 
-1. Download `GekkouInputFix.exe` from [`dist/`](dist/GekkouInputFix.exe)
+1. Download `GekkouInputFix.exe` from the
+   [latest release](https://github.com/feal87/gekkounocarnevaleenginefix/releases/latest)
    (or build it yourself, see [Building](#building)).
 2. Put it next to `GekkounoCarnevale.exe` — or anywhere, it does not care.
 3. Run it before or after starting the game. It has no window and no tray icon.
@@ -171,17 +172,18 @@ is innocent.
 ## Building
 
 The tool is C# 5 with no dependencies beyond the .NET Framework 4.x that ships
-with Windows 10 and 11:
+with Windows 10 and 11.
 
 ```
 cd src\GekkouInputFix
 build.cmd
 ```
 
-or directly:
+This writes `dist\GekkouInputFix.exe` (git-ignored — binaries are published as
+release assets, not committed). Or invoke the compiler directly:
 
 ```
-csc -nologo -target:winexe -optimize+ -out:..\..\dist\GekkouInputFix.exe main.cs
+csc -nologo -target:winexe -optimize+ -out:dist\GekkouInputFix.exe src\GekkouInputFix\main.cs
 ```
 
 ## Other Nitroplus games
