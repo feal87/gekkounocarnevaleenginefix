@@ -1,0 +1,9 @@
+# runtime artefacts
+GekkouInputFix.log
+*.log
+*.pdb
+*.user
+
+# build scratch
+obj/
+bin/
